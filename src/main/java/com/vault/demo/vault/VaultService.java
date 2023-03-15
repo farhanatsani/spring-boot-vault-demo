@@ -16,18 +16,13 @@ public class VaultService {
     private VaultTransitOperations vaultTransit;
     public VaultService(VaultOperations vaultOperations) {
         vaultTransit = vaultOperations.opsForTransit();
-        vaultTransit.createKey(KEY_NAME_ENCRYPT_STRING,
-                VaultTransitKeyCreationRequest.ofKeyType(KEY_TYPE));
+//        vaultTransit.createKey(KEY_NAME_ENCRYPT_STRING,
+//                VaultTransitKeyCreationRequest.ofKeyType(KEY_TYPE));
     }
     public String encrypt(String plainText) {
         return vaultTransit.encrypt(KEY_NAME_ENCRYPT_STRING, plainText);
     }
     public String decrypt(String cipherText) {
         return vaultTransit.decrypt(KEY_NAME_ENCRYPT_STRING, cipherText);
-    }
-    public Hmac getHmac() {
-        VaultHmacRequest request = VaultHmacRequest.builder().plaintext(Plaintext.of("hello-world")).keyVersion(1)
-                .build();
-        return vaultTransit.getHmac("string request", request);
     }
 }
