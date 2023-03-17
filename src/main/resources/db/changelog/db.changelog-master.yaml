@@ -1,0 +1,5 @@
+databaseChangeLog:
+  - include:
+      file: db/migration/V1_customer.sql
+      
+     

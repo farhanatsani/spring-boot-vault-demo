@@ -1,4 +1,4 @@
-package com.vault.demo.customer;
+package com.vault.demo.jasypt;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

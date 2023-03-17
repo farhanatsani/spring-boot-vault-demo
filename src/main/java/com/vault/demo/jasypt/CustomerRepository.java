@@ -1,4 +1,4 @@
-package com.vault.demo.customer;
+package com.vault.demo.jasypt;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
