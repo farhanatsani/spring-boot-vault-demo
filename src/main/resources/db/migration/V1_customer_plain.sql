@@ -1,4 +1,4 @@
-CREATE TABLE customer_jasypt (
+CREATE TABLE customer_plain (
 	id varchar(36) NOT NULL,
 	name varchar(100) NULL,
 	address varchar(100) NOT NULL,

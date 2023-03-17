@@ -2,6 +2,6 @@ databaseChangeLog:
   - include:
       file: db/migration/V1_customer_vault.sql
   - include:
-      file: db/migration/V1_customer_jasypt.sql
+      file: db/migration/V1_customer_plain.sql
       
      

@@ -1,4 +1,4 @@
-package com.vault.demo.customer.jasypt;
+package com.vault.demo.customer.plain;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -18,8 +18,8 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "customer_jasypt")
-public class CustomerJasypt {
+@Table(name = "customer_plain")
+public class CustomerPlain {
     @Id
     @GeneratedValue(generator = "UUID")
     @GenericGenerator(
