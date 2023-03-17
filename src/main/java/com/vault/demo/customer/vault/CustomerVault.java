@@ -1,4 +1,4 @@
-package com.vault.demo.jasypt;
+package com.vault.demo.customer.vault;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -10,6 +10,7 @@ import org.hibernate.annotations.Type;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import java.util.UUID;
 
 @Data
@@ -17,7 +18,8 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Customer {
+@Table(name = "customer_vault")
+public class CustomerVault {
     @Id
     @GeneratedValue(generator = "UUID")
     @GenericGenerator(

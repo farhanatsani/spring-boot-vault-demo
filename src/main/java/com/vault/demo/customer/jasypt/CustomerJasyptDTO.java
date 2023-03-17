@@ -1,4 +1,4 @@
-package com.vault.demo.jasypt.vault;
+package com.vault.demo.customer.jasypt;
 
 import lombok.Builder;
 import lombok.Getter;
@@ -7,7 +7,7 @@ import lombok.Setter;
 import java.util.UUID;
 
 @Getter @Setter @Builder
-public class CustomerDTO {
+public class CustomerJasyptDTO {
     private UUID id;
     private String name;
     private String phoneNo;
